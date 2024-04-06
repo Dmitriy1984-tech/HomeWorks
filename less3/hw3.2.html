@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hw3.2</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            margin:0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #orange{
+            background-color: orange;
+            width:100vw;
+            height:100vh;
+        }
+        #blue{
+            background-color: blue;
+            width:100vw;
+            height:100vh;
+        }
+        #green{
+            background-color: green;
+            width:100vw;
+            height:100vh;
+        }
+        body{
+            font-size:2em;
+        }
+        a span{
+
+            color: black;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        section{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2%;
+        }
+        h1, p, a{
+            margin:20px;
+        }
+    </style>
+</head>
+
+<body>
+<section id="orange">
+    <h1>Section title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor eaque ex ipsa, nam quos rem temporibus voluptatem voluptatum! Aliquid commodi culpa cupiditate deleniti enim eos laboriosam laudantium perferendis sit?</p>
+    <a href="#blue"> <span>	&darr;</span></a>
+</section>
+<section id="blue">
+    <a href="#orange"><span>&uarr;</span></a>
+    <h1>Section title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur magnam necessitatibus, nostrum quae quas quasi tempore tenetur velit! Harum libero minima quidem repellendus, reprehenderit sit totam! Corporis fugit quisquam sint.</p>
+    <a href="#green"><span>&darr;</span></a>
+</section>
+<section id="green">
+    <a href="#blue">&uarr;</a>
+    <h1>Section title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis eius enim expedita, facilis illum ipsum magni nemo nesciunt nisi nulla numquam perferendis perspiciatis quia quibusdam similique vel velit voluptas!</p>
+</section>
+</body>
+</html>
