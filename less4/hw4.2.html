@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Less4.2</title>
+    <style>
+        *{
+            font-size:7.2vh;
+            width:80vw;
+            margin: 2vh 2vw;
+        }
+        .border{
+            border:2px solid black;
+            border-radius: 5px;
+            margin:25px 25px 25px 20px;
+        }
+        .lightblue{
+            color:lightblue;
+        }
+        .darkblue{
+            color:#3F51B5;
+        }
+        .firstSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .facebook{
+            display:flex;
+            justify-content: center;
+            height: 10vh;
+            width:10vw;
+        }
+        .widthIconFacebook{
+            width:10vw;
+        }
+        .inputButton{
+            background-color: white;
+            border:none;
+        }
+        .overFlow{
+            text-overflow: ellipsis;
+        }
+        img{
+            width: 60vw;
+            height:15vh;
+        }
+        input{
+            width:70vw;
+            height:10vh;
+        }
+        #Registration{
+            width:60vh;
+        }
+        label{
+            text-align: center;
+        }
+        .button{
+            color:white;
+            background-color: blue;
+            border-radius: 5px;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+<section class="border firstSection">
+    <img src="img.png" alt="Instagram">
+
+    <label> <input type="text" name="invitation" placeholder="Номер телефону, ім'я користувача або e-mail" class="overFlow" required>
+    </label>
+    <label>
+        <input type="password" name="password" placeholder="Пароль"   required>
+    </label>
+    <input type="button" name="Button" value="Увійти" class="button">
+    <span class="center">АБО</span>
+    <div class="facebook">
+        <input type="image" src="icons8-facebook-48.png" alt="F" class="widthIconFacebook">
+        <input type="button"  value="Увійти через Facebook" class="inputButton darkblue">
+    </div>
+
+</section>
+<section class="border">
+    <label for="Registration">Не маєте облікового запису</label>
+    <input type="submit" value="Зареєструйтеся" id="Registration" class="inputButton lightblue">
+</section>
+</body>
+</html>
