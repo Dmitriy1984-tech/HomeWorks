@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        font-size:35px;
+        color: gray;
+    }
+    .margin{
+        margin:10px;
+    }
+    .bgc{
+        background-color: #d0c8c8;
+    }
+    .desktop{
+        display:flex;
+        flex-direction: column;
+
+        width:100vw;
+        height:100vh;
+
+        border:2px black solid;
+        border-radius: 10px;
+    }
+    .section1{
+        width:100vw;
+        height:33vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sections{
+        width:100vw;
+        height:65vh;
+        display:flex;
+        justify-content: space-between;
+    }
+    .section2{
+        width:74vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3{
+        width:25vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px){
+        .desktop{
+           width:100vw;
+            height:100vh;
+        }
+        .section1{
+            width:100vw;
+            height:15vh;
+        }
+        .sections{
+            flex-direction: column;
+            height:84vh;
+        }
+        .section2{
+            width:100vw;
+            height:68vh;
+        }
+        .section3{
+            width:100vw;
+            height:15vh;
+        }
+    }
+</style>
+<body>
+<div class="desktop">
+<section class="section1 margin bgc">
+    <span>A</span>
+</section>
+<div class="sections">
+    <section class="section2 margin bgc">
+        <span>B</span>
+    </section>
+    <section class ="section3 margin bgc">
+        <span>C</span>
+    </section>
+</div>
+</div>
+</body>
+</html>

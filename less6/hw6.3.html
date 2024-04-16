@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            font-size:35px;
+            color:gray;
+            border-radius:5px;
+        }
+        .bgc{
+            background-color: #d9d3d3;
+        }
+
+        .sections1{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+
+        }
+        .section1{
+            width:100vw;
+            height:33vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sections2{
+            width:100vw;
+            height:66vh;
+            display:flex;
+            justify-content: space-evenly;
+
+        }
+        .section2{
+            width:74vw;
+            height:33vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sections3{
+            width: 74vw;
+            height:66vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+        .sections4{
+            width:74vw;
+            height:32vh;
+            display:flex;
+            justify-content: space-between;
+        }
+        .section3{
+            width:24vw;
+            height:32vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section4{
+            width:24vw;
+            height:32vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section5{
+            width:24vw;
+            height:32vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section6{
+            width:25vw;
+            height:66vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 600px)
+        {
+            .sections1{
+                width:100vw;
+                height:100vh;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .section1{
+                width:100vw;
+                height:20vh;
+            }
+            .sections2{
+                display:flex;
+                flex-direction: column;
+
+                width:100vh;
+                height:78vh;
+            }
+            .sections3{
+                width:100vw;
+                height:60vh;
+            }
+            .section2{
+                width:100vw;
+                height:38vh;
+            }
+            .section3,.section4, .section5{
+                width:20vw;
+                height:20vh;
+            }
+            .section6{
+                width: 100vw;
+                height:20vh;
+            }
+            .sections4{
+                width:100vw;
+                height: 25vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="sections1">
+    <section class="section1 bgc">
+        <span>A</span>
+    </section>
+    <div class="sections2">
+        <div class="sections3">
+            <section class="section2 bgc">
+                <span>B</span>
+            </section>
+            <div class="sections4">
+                <section class="section3 bgc">
+                    <span>C</span>
+                </section>
+                <section class="section4 bgc">
+                    <span>D</span>
+                </section>
+                <section class="section5 bgc">
+                    <span>E</span>
+                </section>
+            </div>
+
+        </div>
+        <section class="section6 bgc">
+            <span>F</span>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

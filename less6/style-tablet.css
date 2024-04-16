@@ -1,0 +1,18 @@
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+    .header{
+        padding:35px 50px 0 0;
+    }
+    .articles{
+        width:100vw;
+        height:220px;
+        display:flex;
+        flex-wrap: nowrap;
+    }
+    .article {
+        width: 23vw;
+        height: 213px;
+        margin: 8px;
+        padding: 0;
+        border-radius: 10px;
+    }
+}

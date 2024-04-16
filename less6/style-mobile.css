@@ -1,0 +1,35 @@
+@media screen and (max-width:600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        width:100vw;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    body {
+        height: 200vh;
+    }
+    .header{
+        height:125px;
+        justify-content: center;
+        align-content: center;
+    }
+    .articles{
+        width:100vw;
+        display:flex;
+        flex-direction: column;
+    }
+    .article {
+        width: 100vw;
+        height: 105px;
+        margin: 10px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
